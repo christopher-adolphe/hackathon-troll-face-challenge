@@ -1,0 +1,19 @@
+{
+  "name": "Troll Face Extension",
+  "description" : "Display Troll Face Randomly",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/troll-face-16x16.png",
+    "32": "images/troll-face-32x32.png",
+    "48": "images/troll-face-48x48.png",
+    "120": "images/troll-face-120x120.png"
+  },
+  "web_accessible_resources": ["images/troll-face.png"]
+}
